@@ -14,10 +14,6 @@
       }
 
       .container {
-        /* width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: row; */
         width: 100%;
         height: 100%;
         display: flex;
@@ -34,7 +30,7 @@
         width: 5em;
       }
 
-      header {
+      nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -42,14 +38,8 @@
         padding: 0 2rem;
       }
 
-      header > span#brand {
-        /* width: 40%; */
+      nav > #brand {
         flex: 1;
-      }
-
-      header > nav {
-        /* width: 25%; */
-        flex: auto;
       }
 
       nav > ul {
@@ -61,33 +51,24 @@
         flex: auto;
       }
 
-      header > span#account {
+      nav > #account {
         /* width: 10%; */
         display: flex;
         flex: 1;
         justify-content: flex-end;
-        margin-right: 4%;
+        /* margin-right: 4%; */
       }
 
-      nav > ul > li > a {
-        /* display: block;
-        padding: 1.5rem 1rem; */
-        /* flex: 2; */
-      }
+ 
 
-      /* nav > span {
-          flex: 1;
-        }
 
-        nav > ul {
-        } */
     </style>
   </head>
 
   <body>
     <header>
-      <span id="brand"><a href="">Turn Up Hip Hop</a></span>
       <nav>
+        <span id="brand"><a href="">Turn Up Hip Hop</a></span>
         <ul>
           <li>
             <a href="">Watch</a>
@@ -102,8 +83,8 @@
             <a href="">Events</a>
           </li>
         </ul>
+        <span id="account">Account</span>
       </nav>
-      <span id="account">Account</span>
     </header>
     <main class="container">
       <div class="item">a</div>
