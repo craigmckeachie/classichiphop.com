@@ -1,46 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    html,
-    body {
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Example</title>
+    <link rel="stylesheet" href="reset.css" />
+    <style>
+      html,
+      body {
+        width: 100%;
         height: 100%;
+      }
 
-    }
-
-    .container {
+      .container {
+        /* width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row; */
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: row;
 
-    }
+        flex-wrap: wrap;
+      }
 
-    .item {
+      .item {
         border: 1px dashed black;
         margin: 2em;
         padding: 2em;
         height: 5em;
         width: 5em;
-    }
-</style>
+      }
 
-<body>
+      header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
 
-    <div class="container">
-        <div class="item">a
-        </div>
-        <div class="item">b</div>
-        <div class="item">c</div>
-    </div>
-    </div>
+      header > span#brand {
+        /* width: 40%; */
+        flex: auto;
+      }
 
-</body>
+      header > nav {
+        /* width: 25%; */
+        flex: auto;
+      }
 
+      header > span#account {
+        /* width: 10%; */
+        display: flex;
+        flex: auto;
+        justify-content: flex-end;
+        margin-right: 8%;
+      }
+
+      nav > ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+
+      nav > ul > li > a {
+        /* display: block;
+        padding: 1.5rem 1rem; */
+        /* flex: 2; */
+      }
+
+      /* nav > span {
+          flex: 1;
+        }
+
+        nav > ul {
+        } */
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <span id="brand"><a href="">Turn Up Hip Hop</a></span>
+      <nav>
+        <ul>
+          <li>
+            <a href="">Watch</a>
+          </li>
+          <li>
+            <a href="">Listen</a>
+          </li>
+          <li>
+            <a href="">Read</a>
+          </li>
+          <li>
+            <a href="">Events</a>
+          </li>
+        </ul>
+      </nav>
+      <span id="account">Account</span>
+    </header>
+    <main class="container">
+      <div class="item">a</div>
+      <div class="item">b</div>
+      <div class="item">c</div>
+      <div class="item">a</div>
+      <div class="item">b</div>
+      <div class="item">c</div>
+      <div class="item">a</div>
+      <div class="item">b</div>
+      <div class="item">c</div>
+      <div class="item">a</div>
+      <div class="item">b</div>
+      <div class="item">c</div>
+      <div class="item">a</div>
+      <div class="item">b</div>
+      <div class="item">c</div>
+      <div class="item">a</div>
+      <div class="item">b</div>
+      <div class="item">c</div>
+      <div class="item">a</div>
+      <div class="item">b</div>
+      <div class="item">c</div>
+      <div class="item">a</div>
+      <div class="item">b</div>
+      <div class="item">c</div>
+      <div class="item">a</div>
+      <div class="item">b</div>
+      <div class="item">c</div>
+      <div class="item">a</div>
+      <div class="item">b</div>
+      <div class="item">c</div>
+    </main>
+  </body>
 </html>
