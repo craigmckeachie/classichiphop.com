@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        display: grid;
+        grid-template:
+          minmax(10%, 20%) auto minmax(10%, 20%) / minmax(10%, 20%)
+          auto minmax(10%, 20%);
+        grid-gap: 2rem;
+      }
+      /* header {
+        display: grid;
+        grid-template:
+          minmax(10%, 20%) auto minmax(10%, 20%) / minmax(10%, 20%)
+          auto minmax(10%, 20%);
+        grid-row: 1/2;
+        grid-column: 1/4;
+        grid-gap: 20px;
+      } */
+      #primary-nav {
+        grid-row: 1/2;
+        grid-column: 2/3;
+      }
+      #account {
+        grid-row: 1/2;
+        grid-column: 3/4;
+      }
+
+      #side-nav {
+        grid-row: 2/3;
+        grid-column: 1/2;
+      }
+       aside {
+        grid-row: 2/3;
+        grid-column: 3/4;
+      }
+      main {
+        grid-row: 2/3;
+        grid-column: 2/3;
+      }
+      footer {
+        grid-row: 3/4;
+        grid-column: 1/4;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <span id="logo">logo</span>
+      <nav id="primary-nav">Primary Nav</nav>
+      <span id="account">Account</span>
+    </header>
+    <!-- <nav id="side-nav">Side Nav</nav> -->
+    <main>Main</main>
+    <aside>Aside</aside>
+    <footer>Footer</footer>
+  </body>
+</html>
