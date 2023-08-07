@@ -26,10 +26,10 @@
 
       main section.hero {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas: "one two three four";
-        gap: 3%;
-        padding: 6em 4em;
+        grid-template-columns: 1fr;
+        grid-template-areas: "col-one col-two";
+        gap: 3em;
+        padding: 6em 25em;
         background: #f7f8f8; /* fallback for old browsers */
         background: -webkit-linear-gradient(
           to right,
@@ -44,11 +44,17 @@
       }
 
       section.hero h1 {
-        grid-area: two;
+        grid-area: col-one;
+        justify-self: end;
       }
 
-      section.hero p {
-        grid-area: three;
+      section.hero h5 {
+        grid-area: col-two;
+        /* justify-self: end; */
+      }
+
+      section.background-image1{
+
       }
 
       nav {
@@ -150,13 +156,8 @@
 
     <main>
       <section class="hero">
-        <h1>Home is where the heart is</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
-          voluptatem molestiae exercitationem consectetur, accusamus similique
-          hic architecto minima dolorem ad possimus velit, officia qui fuga at
-          delectus voluptas laudantium sit.
-        </p>
+        <h1>Curated Classic Hip Hop Content</h1>
+        <h5>Curated content from around the internet. No news.</h5>
       </section>
     </main>
     <footer>&copy; 2023 Funny Ant, LLC</footer>
