@@ -17,7 +17,7 @@
         margin: 0;
         display: grid;
         /* grid-template-rows: minmax(10%, 15%); */
-        grid-template-rows: minmax(10%, 15%) 80% minmax(10%, 15%);
+        grid-template-rows: auto 1fr auto;
         grid-template-columns: 1fr;
         grid-template-areas: "header" "main" "footer";
         background-color: #fafafa;
@@ -29,11 +29,15 @@
         grid-area: header;
       }
 
+      main {
+        grid-area: main;
+      }
+
       section {
         padding: 2em 4em;
       }
 
-      main section.hero {
+      section.hero {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: "col-one col-two";
@@ -63,13 +67,6 @@
       }
 
       section.background-image1 {
-        /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-        /* background-image: linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
-          ),
-          url("https://64.media.tumblr.com/ee843139aadcb41fa338d57431c5ee9c/tumblr_oiwyu3PV5S1tf8vylo1_1280.png"); */
-        /* background-image: url("https://64.media.tumblr.com/ee843139aadcb41fa338d57431c5ee9c/tumblr_oiwyu3PV5S1tf8vylo1_1280.png"); */
         background-image: linear-gradient(
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)
@@ -77,13 +74,12 @@
           url("images/mixtapes.jpg");
         /* Set a specific height */
         height: 50%;
-
         /* Position and center the image to scale nicely on all screens */
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        z-index: 1;
+        /* z-index: 1; */
       }
 
       section div.background-image1-text {
@@ -164,11 +160,10 @@
       }
 
       footer {
-        position: relative;
-        z-index: 1;
+        height: 20rem;
         background-color: #e5e5e5;
         padding: 1rem 4rem;
-        /* grid-area: footer; */
+        grid-area: footer;
       }
     </style>
   </head>
@@ -209,12 +204,52 @@
           doloribus, tenetur nostrum?
         </p>
       </section>
-      <section class="background-image1">
+      <section>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt
+          nobis vitae beatae ipsum repudiandae voluptatem minus, eligendi,
+          natus, obcaecati dolorem iste earum voluptates? At aperiam nam libero
+          doloribus, tenetur nostrum?
+        </p>
+      </section>
+      <section>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt
+          nobis vitae beatae ipsum repudiandae voluptatem minus, eligendi,
+          natus, obcaecati dolorem iste earum voluptates? At aperiam nam libero
+          doloribus, tenetur nostrum?
+        </p>
+      </section>
+      <section>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt
+          nobis vitae beatae ipsum repudiandae voluptatem minus, eligendi,
+          natus, obcaecati dolorem iste earum voluptates? At aperiam nam libero
+          doloribus, tenetur nostrum?
+        </p>
+      </section>
+      <section>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt
+          nobis vitae beatae ipsum repudiandae voluptatem minus, eligendi,
+          natus, obcaecati dolorem iste earum voluptates? At aperiam nam libero
+          doloribus, tenetur nostrum?
+        </p>
+      </section>
+      <section>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt
+          nobis vitae beatae ipsum repudiandae voluptatem minus, eligendi,
+          natus, obcaecati dolorem iste earum voluptates? At aperiam nam libero
+          doloribus, tenetur nostrum?
+        </p>
+      </section>
+      <!-- <section class="background-image1">
         <div class="background-image1-text">
           <h1>Classic Mixtapes</h1>
           <p>from back in the day</p>
         </div>
-      </section>
+      </section> -->
     </main>
     <footer>&copy; 2023 Funny Ant, LLC</footer>
   </body>
