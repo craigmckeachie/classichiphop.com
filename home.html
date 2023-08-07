@@ -24,6 +24,10 @@
         background-color: white;
       }
 
+      section {
+        padding: 2em 4em;
+      }
+
       main section.hero {
         display: grid;
         grid-template-columns: 1fr;
@@ -53,8 +57,26 @@
         /* justify-self: end; */
       }
 
-      section.background-image1{
+      section.background-image1 {
+        /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+        /* background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("https://64.media.tumblr.com/ee843139aadcb41fa338d57431c5ee9c/tumblr_oiwyu3PV5S1tf8vylo1_1280.png"); */
+        /* background-image: url("https://64.media.tumblr.com/ee843139aadcb41fa338d57431c5ee9c/tumblr_oiwyu3PV5S1tf8vylo1_1280.png"); */
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ), url("https://lh3.googleusercontent.com/pw/AIL4fc_HUWrTKy58BJkWlLdURVMunqHINO-gg3PLes4BKByV9BWuiDpCaPL1VFVfbPo4GI0nM-O7cwTW98D8mS1vDatgq8hpJsyOLKpMWwSpLZiM_Xrf2uv5-Xr7P0jWM1ExNkMIfkKLLDsf0ng5nfMkHMyWzhrIF7brpaD14yGZsBTcu1Qbn5MkdLry2tmF_glblzzMd7kvnke7ky2metwIIffoafV-tv-6gRPX1IjgdJDEGI7rRn8ldDVMdRqsGiASvimI2f-TMKgcWKcutxqAKwIAn2_FYfNpS1xDc8nipWzzop9xuPDGFxWgwjNtVHAAuJYZfQt3-8G_pYm63NEQqDcTg-x2-Iut567G85yJ9l2j85OVyQoip2UqrCJqzA7NFL_wy5H7ylI-GAdmqvBjjw8DDXys2EcCRPS_f5gFar9hCgDR39Dprkoq19E9-zP2MDNw9NhPkUPK64JmiKEAH4zQTc4NjQe6lH2fbA-hlj53mWnyJ3hwxRkditIb-9uCqNkfMmQJiS92lN8Kh6l4R6IB-3NNumyeShxZS9KR9bTUCjPgbPAFdjZagISlLNwVXjttU_z0kQh-xu5_rOjpNq9s5P4_nclZtjdGu_nr08N37hIo1pdY3xjntX_riMYBeYgUUV9l0lk8DBfhVhBN4l_zNlktj1dV2nNUdhnM-Xx1mTcoiFIzrxFGy-Mz4nyxH5Z6jQx_olAS6e5CrSGajjKftaU5ahU8iNDJbXpI1uiPcEUHvQGgc1VZcr6JGrsGx5QtnLJYIKiXAJS9TZ2IM5Bx_cqLcvxHWCQspo70Ej9OhJ2P2l01AiOOvThMDRFHiz_PT6_PKub5ioyjr6DI8NDzm0ttoDJVrtMwszDTeS1Sqja1_jOFEXgXYo1jFEJEwMDr2Y8qIsJFgJVtRglxLvQ=w2654-h1990-s-no?authuser=0");
+        /* Set a specific height */
+        height: 50%;
 
+        /* Position and center the image to scale nicely on all screens */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* position: relative; */
       }
 
       nav {
@@ -159,6 +181,15 @@
         <h1>Curated Classic Hip Hop Content</h1>
         <h5>Curated content from around the internet. No news.</h5>
       </section>
+      <section>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt
+          nobis vitae beatae ipsum repudiandae voluptatem minus, eligendi,
+          natus, obcaecati dolorem iste earum voluptates? At aperiam nam libero
+          doloribus, tenetur nostrum?
+        </p>
+      </section>
+      <section class="background-image1"></section>
     </main>
     <footer>&copy; 2023 Funny Ant, LLC</footer>
   </body>
