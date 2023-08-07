@@ -6,7 +6,8 @@
     <title>Home</title>
     <style>
       html,
-      body {
+      body,
+      main {
         height: 100%;
       }
       body {
@@ -15,13 +16,17 @@
           sans-serif;
         margin: 0;
         display: grid;
-        grid-template-rows: minmax(10%, 15%);
+        /* grid-template-rows: minmax(10%, 15%); */
+        grid-template-rows: minmax(10%, 15%) 80% minmax(10%, 15%);
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "main" "footer";
         background-color: #fafafa;
       }
       header {
         display: flex;
         padding: 2em 4em;
         background-color: white;
+        grid-area: header;
       }
 
       section {
@@ -69,7 +74,7 @@
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)
           ),
-          url("https://lh3.googleusercontent.com/pw/AIL4fc_HUWrTKy58BJkWlLdURVMunqHINO-gg3PLes4BKByV9BWuiDpCaPL1VFVfbPo4GI0nM-O7cwTW98D8mS1vDatgq8hpJsyOLKpMWwSpLZiM_Xrf2uv5-Xr7P0jWM1ExNkMIfkKLLDsf0ng5nfMkHMyWzhrIF7brpaD14yGZsBTcu1Qbn5MkdLry2tmF_glblzzMd7kvnke7ky2metwIIffoafV-tv-6gRPX1IjgdJDEGI7rRn8ldDVMdRqsGiASvimI2f-TMKgcWKcutxqAKwIAn2_FYfNpS1xDc8nipWzzop9xuPDGFxWgwjNtVHAAuJYZfQt3-8G_pYm63NEQqDcTg-x2-Iut567G85yJ9l2j85OVyQoip2UqrCJqzA7NFL_wy5H7ylI-GAdmqvBjjw8DDXys2EcCRPS_f5gFar9hCgDR39Dprkoq19E9-zP2MDNw9NhPkUPK64JmiKEAH4zQTc4NjQe6lH2fbA-hlj53mWnyJ3hwxRkditIb-9uCqNkfMmQJiS92lN8Kh6l4R6IB-3NNumyeShxZS9KR9bTUCjPgbPAFdjZagISlLNwVXjttU_z0kQh-xu5_rOjpNq9s5P4_nclZtjdGu_nr08N37hIo1pdY3xjntX_riMYBeYgUUV9l0lk8DBfhVhBN4l_zNlktj1dV2nNUdhnM-Xx1mTcoiFIzrxFGy-Mz4nyxH5Z6jQx_olAS6e5CrSGajjKftaU5ahU8iNDJbXpI1uiPcEUHvQGgc1VZcr6JGrsGx5QtnLJYIKiXAJS9TZ2IM5Bx_cqLcvxHWCQspo70Ej9OhJ2P2l01AiOOvThMDRFHiz_PT6_PKub5ioyjr6DI8NDzm0ttoDJVrtMwszDTeS1Sqja1_jOFEXgXYo1jFEJEwMDr2Y8qIsJFgJVtRglxLvQ=w2654-h1990-s-no?authuser=0");
+          url("images/mixtapes.jpg");
         /* Set a specific height */
         height: 50%;
 
@@ -78,6 +83,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
+        z-index: 1;
       }
 
       section div.background-image1-text {
@@ -156,9 +162,13 @@
       #logo a:hover {
         text-decoration: underline;
       }
+
       footer {
+        position: relative;
+        z-index: 1;
         background-color: #e5e5e5;
         padding: 1rem 4rem;
+        /* grid-area: footer; */
       }
     </style>
   </head>
@@ -201,8 +211,8 @@
       </section>
       <section class="background-image1">
         <div class="background-image1-text">
-          <h1>Fire</h1>
-          <p>Classic Mixtapes</p>
+          <h1>Classic Mixtapes</h1>
+          <p>from back in the day</p>
         </div>
       </section>
     </main>
