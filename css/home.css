@@ -16,7 +16,7 @@ body {
 }
 header {
   display: flex;
-  padding: 2em 4em;
+  padding: 2em 4em 4em 4em;
   background-color: white;
   grid-area: header;
 }
@@ -27,6 +27,13 @@ main {
 
 section {
   padding: 2em 4em;
+}
+
+footer {
+  height: 20rem;
+  background-color: #ededed;
+  padding: 1rem 4rem;
+  grid-area: footer;
 }
 
 p {
@@ -49,7 +56,7 @@ nav > ul {
 nav > ul > li > a,
 #account > a {
   text-decoration: none;
-  color: #3f3e3b;
+  color: hsl(45, 3%, 24%);
   font-weight: 650;
 }
 
@@ -68,6 +75,7 @@ nav > ul > li > a:hover,
 
 #logo:after {
   background: #fb923c;
+  background: #d09117;
   content: "";
   display: block;
   height: 5px;
@@ -97,30 +105,18 @@ nav > ul > li > a:hover,
   text-decoration: underline;
 }
 
-footer {
-  height: 20rem;
-  background-color: #ededed;
-  padding: 1rem 4rem;
-  grid-area: footer;
-}
-
 .hero {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "col-one col-two";
   gap: 3em;
   padding: 6em 25em;
-  background: #f7f8f8; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #fb923c,
-    #f7f8f8
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #fb923c,
-    #f7f8f8
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #bc642a;
+  background: #d09117;
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: -webkit-linear-gradient(to right, #fb923c, #ededed); */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background: linear-gradient(to right, #fb923c, #ededed); */
 }
 
 .hero h1 {
@@ -136,7 +132,7 @@ footer {
   background-image: linear-gradient(hsla(0, 0%, 0%, 0.1), rgba(0, 0, 0, 0.1)),
     url("/images/mixtapes.jpg");
   /* Set a specific height */
-  height: 35%;
+  height: 20%;
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
@@ -145,7 +141,7 @@ footer {
   display: block;
 }
 
-.background-mixtapes-text {
+/* .background-mixtapes-text {
   text-align: center;
   position: absolute;
   top: 50%;
@@ -163,31 +159,46 @@ footer {
 
   background-color: hsl(45, 3%, 35%);
   color: white;
-  
 
   width: 18rem;
   opacity: 90%;
   padding: 2em 4em;
-}
+ 
+  font-weight: 800;
+} 
+*/
 
-.background-mixtapes h3{
-   
+.background-mixtapes h3 {
   text-transform: uppercase;
 }
 
 .background-graph-paper {
-  height: 25%;
+  height: 15%;
   background-color: #ffffff;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%2394a3b8' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .background-used-record-store {
   background-image: linear-gradient(hsla(0, 0%, 0%, 0.1), rgba(0, 0, 0, 0.1)),
-    url("/images/used-record-store1.jpg");
+    url("/images/used-record-store2.jpg");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   display: block;
+}
+
+.text-image {
+  display: flex;
+  gap: 10rem;
+}
+
+#ultra-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  -webkit-box-reflect: right 1em linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4)) ;
 }
