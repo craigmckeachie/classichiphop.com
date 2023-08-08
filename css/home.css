@@ -189,7 +189,7 @@ nav > ul > li > a:hover,
 .background-used-record-store {
   background-image: linear-gradient(hsla(0, 0%, 0%, 0.1), rgba(0, 0, 0, 0.1)),
     url("/images/used-record-store2.jpg");
-  height: 50%;
+  height: 36%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
