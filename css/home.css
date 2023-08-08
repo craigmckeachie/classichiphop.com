@@ -78,12 +78,14 @@ nav > ul > li > a:hover,
 }
 
 #logo {
-    padding-right: 1em;
+  padding-right: 1em;
 }
 
 #logo:after {
   background: #fb923c;
   background: #d09117;
+  background: #bbac3f;
+  background: #c3bd31;
   content: "";
   display: block;
   height: 5px;
@@ -121,6 +123,8 @@ nav > ul > li > a:hover,
   padding: 6em 25em;
   background: #bc642a;
   background: #d09117;
+  background: #bbac3f;
+  background: #c3bd31;
   /* Chrome 10-25, Safari 5.1-6 */
   /* background: -webkit-linear-gradient(to right, #fb923c, #ededed); */
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
