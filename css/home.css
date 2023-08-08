@@ -6,13 +6,14 @@ body {
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: hsl(45, 3%, 24%);
+  font-weight: 300;
+  color: #3f3e3b;
   margin: 0;
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 100%;
   grid-template-areas: "header" "main" "footer";
-  background-color: #fafafa;
+  background-color: #f9fafb;
 }
 header {
   display: flex;
@@ -89,7 +90,7 @@ nav > ul > li > a:hover,
   background: hsl(47.35, 97.38%, 44.9%);
   background: #bc112d;
   background: #eacd3e;
-  background-color: #B0A49A;
+  background-color: #b0a49a;
   content: "";
   display: block;
   height: 5px;
@@ -134,12 +135,12 @@ nav > ul > li > a:hover,
   /* color: #c8bcb2; */
   background: #eacd3e;
   /* color: #332b1a; */
-  background: #B0A49A;
+  background: #b0a49a;
 
   /* Chrome 10-25, Safari 5.1-6 */
   /* background: -webkit-linear-gradient(to right, #fb923c, #ededed); */
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, #B0A49A, #ededed);
+  background: linear-gradient(to right, #b0a49a, #ededed);
 }
 
 .hero h1 {
@@ -149,6 +150,7 @@ nav > ul > li > a:hover,
 
 .hero h5 {
   grid-area: col-two;
+  color: #71717a;
 }
 
 .background-mixtapes {
@@ -182,15 +184,14 @@ nav > ul > li > a:hover,
 
   /* background-color: hsl(45, 3%, 35%); */
   /* opacity: 90%; */
-  color: white;
+  color: #d1d5db;
   width: 26rem;
   padding: 2em 8em;
   font-size: xx-large;
   font-weight: 800;
   font-family: monospace;
   line-height: 1.8em;
-} 
-
+}
 
 .background-mixtapes h3 {
   text-transform: uppercase;
