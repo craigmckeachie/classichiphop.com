@@ -31,7 +31,6 @@ section {
 
 footer {
   height: 20rem;
-  background-color: #ededed;
   background-color: hsl(45, 3%, 24%);
   color: white;
   padding: 1rem 4rem;
@@ -73,6 +72,13 @@ nav > ul > li > a:hover,
   flex: 1;
   max-width: 8rem;
   max-height: 3.5rem;
+
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZGF0YS1uYW1lPSJMYXllciAxIiBpZD0iTGF5ZXJfMSIgdmlld0JveD0iMCAwIDMyIDMyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjx0aXRsZS8+PHBhdGggZD0iTTE0LDE5LjV2MmExLjUsMS41LDAsMCwwLDMsMHYtMkExLjUsMS41LDAsMCwwLDE0LDE5LjVabTIsMHYyYTAuNSwwLjUsMCwwLDEtMSwwdi0yQTAuNSwwLjUsMCwwLDEsMTYsMTkuNVoiLz48cGF0aCBkPSJNMjIsOS41YTYuNSw2LjUsMCwxLDAtMTAuOTUsNC43M0wxMiwyN2MwLDEsMS43NywyLDMuNSwyUzE5LDI4LDE5LDI3bDAuOTUtMTIuODFBNi40OCw2LjQ4LDAsMCwwLDIyLDkuNVpNMTUuNSw0QTUuMzUsNS4zNSwwLDAsMSwyMSw5SDEwQTUuMzUsNS4zNSwwLDAsMSwxNS41LDRaTTEwLDEwSDIxYTUuMzUsNS4zNSwwLDAsMS01LjQ3LDVBNS4zNSw1LjM1LDAsMCwxLDEwLDEwWm04LDE3YTMuMDgsMy4wOCwwLDAsMS0yLjUsMUEzLDMsMCwwLDEsMTMsMjdMMTIuMTIsMTVhNi40NCw2LjQ0LDAsMCwwLDYuNzcsMFoiLz48L3N2Zz4=")
+    no-repeat right;
+}
+
+#logo {
+    padding-right: 1em;
 }
 
 #logo:after {
