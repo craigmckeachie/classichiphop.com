@@ -86,6 +86,10 @@ nav > ul > li > a:hover,
   background: #d09117;
   background: #bbac3f;
   background: #c3bd31;
+  background: hsl(47.35, 97.38%, 44.9%);
+  background: #bc112d;
+  background: #eacd3e;
+  background-color: #B0A49A;
   content: "";
   display: block;
   height: 5px;
@@ -125,6 +129,13 @@ nav > ul > li > a:hover,
   background: #d09117;
   background: #bbac3f;
   background: #c3bd31;
+  background: hsl(47.35, 97.38%, 44.9%);
+  background: #bc112d;
+  /* color: #c8bcb2; */
+  background: #eacd3e;
+  /* color: #332b1a; */
+  background: #B0A49A;
+
   /* Chrome 10-25, Safari 5.1-6 */
   /* background: -webkit-linear-gradient(to right, #fb923c, #ededed); */
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
