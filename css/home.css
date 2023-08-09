@@ -83,19 +83,42 @@ nav > ul > li > a:hover,
 }
 
 #logo:after {
-  background: #fb923c;
-  background: #d09117;
-  background: #bbac3f;
-  background: #c3bd31;
-  background: hsl(47.35, 97.38%, 44.9%);
-  background: #bc112d;
-  background: #eacd3e;
-  background-color: #b0a49a;
+  /* background: #fb923c; */
+  /* background: #d09117; */
+  /* background: #bbac3f; */
+  /* background: #c3bd31; */
+  background: #e2b303;
+  /* background: #bc112d; */
+  /* background: #eacd3e; */
+  /* background-color: #b0a49a; */
   content: "";
   display: block;
   height: 5px;
   margin: 10px auto 0;
   width: 8rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "col-one col-two";
+  gap: 3em;
+  padding: 6em 25em;
+  background: #bc642a;
+  background: #d09117;
+  background: #bbac3f;
+  background: #c3bd31;
+  background: hsl(47.35, 97.38%, 44.9%);
+  background: #bc112d;
+  /* color: #c8bcb2; */
+  background: #eacd3e;
+  /* color: #332b1a; */
+  /* background: #b0a49a; */
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: -webkit-linear-gradient(to right, #fb923c, #ededed); */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #e2b303, #efefef);
 }
 
 #account {
@@ -120,29 +143,6 @@ nav > ul > li > a:hover,
   text-decoration: underline;
 }
 
-.hero {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "col-one col-two";
-  gap: 3em;
-  padding: 6em 25em;
-  background: #bc642a;
-  background: #d09117;
-  background: #bbac3f;
-  background: #c3bd31;
-  background: hsl(47.35, 97.38%, 44.9%);
-  background: #bc112d;
-  /* color: #c8bcb2; */
-  background: #eacd3e;
-  /* color: #332b1a; */
-  background: #b0a49a;
-
-  /* Chrome 10-25, Safari 5.1-6 */
-  /* background: -webkit-linear-gradient(to right, #fb923c, #ededed); */
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, #b0a49a, #ededed);
-}
-
 .hero h1 {
   grid-area: col-one;
   justify-self: end;
@@ -154,7 +154,7 @@ nav > ul > li > a:hover,
 }
 
 .background-mixtapes {
-  background-image: linear-gradient(hsla(0, 0%, 0%, .2), rgba(0, 0, 0, .2)),
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.2), rgba(0, 0, 0, 0.2)),
     url("/images/mixtapes.jpg");
   /* Set a specific height */
   height: 20%;
