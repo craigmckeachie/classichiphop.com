@@ -3,6 +3,7 @@ body {
   height: 100%;
   width: 100%;
 }
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -15,10 +16,10 @@ body {
   grid-template-areas: "header" "main" "footer";
   background-color: #f9fafb;
 }
+
 header {
   display: flex;
   padding: 2em 4em 4em 4em;
-  background-color: f9fafb;
   grid-area: header;
 }
 
@@ -32,7 +33,7 @@ section {
 
 footer {
   height: 10rem;
-  background-color: hsl(45, 3%, 24%);
+  background-color: #3f3e3b;
   color: white;
   padding: 1rem 4rem;
   grid-area: footer;
@@ -73,7 +74,6 @@ nav > ul > li > a:hover,
   flex: 1;
   max-width: 8rem;
   max-height: 3.5rem;
-
   background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZGF0YS1uYW1lPSJMYXllciAxIiBpZD0iTGF5ZXJfMSIgdmlld0JveD0iMCAwIDMyIDMyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjx0aXRsZS8+PHBhdGggZD0iTTE0LDE5LjV2MmExLjUsMS41LDAsMCwwLDMsMHYtMkExLjUsMS41LDAsMCwwLDE0LDE5LjVabTIsMHYyYTAuNSwwLjUsMCwwLDEtMSwwdi0yQTAuNSwwLjUsMCwwLDEsMTYsMTkuNVoiLz48cGF0aCBkPSJNMjIsOS41YTYuNSw2LjUsMCwxLDAtMTAuOTUsNC43M0wxMiwyN2MwLDEsMS43NywyLDMuNSwyUzE5LDI4LDE5LDI3bDAuOTUtMTIuODFBNi40OCw2LjQ4LDAsMCwwLDIyLDkuNVpNMTUuNSw0QTUuMzUsNS4zNSwwLDAsMSwyMSw5SDEwQTUuMzUsNS4zNSwwLDAsMSwxNS41LDRaTTEwLDEwSDIxYTUuMzUsNS4zNSwwLDAsMS01LjQ3LDVBNS4zNSw1LjM1LDAsMCwxLDEwLDEwWm04LDE3YTMuMDgsMy4wOCwwLDAsMS0yLjUsMUEzLDMsMCwwLDEsMTMsMjdMMTIuMTIsMTVhNi40NCw2LjQ0LDAsMCwwLDYuNzcsMFoiLz48L3N2Zz4=")
     no-repeat right;
 }
@@ -83,42 +83,12 @@ nav > ul > li > a:hover,
 }
 
 #logo:after {
-  /* background: #fb923c; */
-  /* background: #d09117; */
-  /* background: #bbac3f; */
-  /* background: #c3bd31; */
-  background: #e2b303;
-  /* background: #bc112d; */
-  /* background: #eacd3e; */
-  /* background-color: #b0a49a; */
+  background: #b0a49a;
   content: "";
   display: block;
   height: 5px;
   margin: 10px auto 0;
   width: 8rem;
-}
-
-.hero {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "col-one col-two";
-  gap: 3em;
-  padding: 6em 25em;
-  background: #bc642a;
-  background: #d09117;
-  background: #bbac3f;
-  background: #c3bd31;
-  background: hsl(47.35, 97.38%, 44.9%);
-  background: #bc112d;
-  /* color: #c8bcb2; */
-  background: #eacd3e;
-  /* color: #332b1a; */
-  /* background: #b0a49a; */
-
-  /* Chrome 10-25, Safari 5.1-6 */
-  /* background: -webkit-linear-gradient(to right, #fb923c, #ededed); */
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, #e2b303, #f9fafb);
 }
 
 #account {
@@ -143,22 +113,23 @@ nav > ul > li > a:hover,
   text-decoration: underline;
 }
 
-.hero h1 {
-  grid-area: col-one;
-  justify-self: end;
+.gradient-accent {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 6em 25em;
+  background: #b0a49a;
+  background: linear-gradient(to right, #b0a49a, #f9fafb);
+  background: -webkit-linear-gradient(to right, #b0a49a, #f9fafb);
 }
 
-.hero h5 {
-  grid-area: col-two;
+.gradient-accent h5 {
   color: #71717a;
 }
 
 .background-mixtapes {
   background-image: linear-gradient(hsla(0, 0%, 0%, 0.2), rgba(0, 0, 0, 0.2)),
     url("/images/mixtapes.jpg");
-  /* Set a specific height */
   height: 20%;
-  /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -172,19 +143,6 @@ nav > ul > li > a:hover,
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  /* background-color: #71717a;
-  color: hsl(45, 3%, 24%); */
-
-  /* background-color: #e3b502;
-  color: #ededed; */
-
-  /* background-color: #a16e31;
-  color: white;  */
-
-  /* background-color: hsl(45, 3%, 35%); */
-  /* opacity: 80%; */
-  color: #d1d5db;
   color: #f9fafb;
   width: 26rem;
   padding: 0em 0em;
@@ -192,27 +150,13 @@ nav > ul > li > a:hover,
   font-weight: 800;
   font-family: monospace;
   line-height: 1.8em;
-}
-
-.background-mixtapes h3 {
   text-transform: uppercase;
 }
 
 .background-graph-paper {
   height: 25%;
-  background-color: #ffffff;
+  background-color: f9fafb;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%2394a3b8' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-}
-
-.background-used-record-store {
-  background-image: linear-gradient(hsla(0, 0%, 0%, 0.1), rgba(0, 0, 0, 0.1)),
-    url("/images/used-record-store2.jpg");
-  height: 36%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  display: block;
 }
 
 .text-image {
@@ -232,8 +176,7 @@ nav > ul > li > a:hover,
 
 #master-ace-bizmarkie-puppet {
   border-radius: 2px;
+  object-fit: cover;
   -webkit-box-reflect: right 1em
     linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
-
-  object-fit: cover;
 }
