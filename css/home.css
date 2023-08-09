@@ -73,7 +73,7 @@ nav > ul > li > a.active:after,
   background: #b0a49a;
   content: "";
   display: block;
-  height: 1px;
+  height: 3px;
   margin: 10px auto 0;
   width: 3rem;
 }
