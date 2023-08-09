@@ -59,15 +59,30 @@ nav > ul {
 nav > ul > li > a,
 #account > a {
   text-decoration: none;
-  color: hsl(45, 3%, 24%);
+  color: #3f3e3b;
+  font-weight: 500;
+}
+
+nav > ul > li > a.active,
+#account > a.active{
   font-weight: 650;
+}
+
+nav > ul > li > a.active:after,
+#account > a.active:after{
+  background: #b0a49a;
+  content: "";
+  display: block;
+  height: 1px;
+  margin: 10px auto 0;
+  width: 3rem;
 }
 
 nav > ul > li > a:hover,
 #account > a:hover {
   text-decoration: underline;
   color: hsl(45, 3%, 24%);
-  font-weight: 650;
+  font-weight: 500;
 }
 
 #logo {
@@ -166,6 +181,7 @@ nav > ul > li > a:hover,
 
 #ultra-image {
   width: 100%;
+
   max-width: 300px;
   height: auto;
   object-fit: cover;
