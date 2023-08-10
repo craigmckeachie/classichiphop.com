@@ -1,4 +1,8 @@
 @import "https://unpkg.com/open-props";
+/* @import "https://unpkg.com/browse/open-props@1.5.11/media.min.css";
+@import "https://unpkg.com/browse/open-props@1.5.11/fonts.min.css";
+@import "https://unpkg.com/browse/open-props@1.5.11/sizes.min.css";
+@import "https://unpkg.com/browse/open-props@1.5.11/gray.min.css"; */
 
 :where(html) {
   --brand-5: #b0a49a;
@@ -137,8 +141,8 @@ nav > ul > li > a:hover,
   grid-template-columns: 1fr;
   padding: var(--size-10) var(--size-14);
   background: var(--brand-5);
+  background: -webkit-linear-gradient(to right, var(--brand-5), var(--gray-0));
   background: linear-gradient(to right, var(--brand-5), var(--gray-0));
-  background: -webkit-linear-gradient(to right, var(--brand-5)), var(--gray-0));
 }
 
 .gradient-accent h5 {
