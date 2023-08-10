@@ -43,6 +43,7 @@ section {
 footer {
   height: 10rem;
   background-color: var(--brand-5);
+  color: var(--gray-3);
   padding: var(--size-3) var(--size-9);
   grid-area: footer;
 }
