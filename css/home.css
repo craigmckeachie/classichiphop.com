@@ -1,5 +1,5 @@
 /* @import "https://unpkg.com/open-props"; */
-@import "https://unpkg.com/open-props@1.5.11/media.min.css";
+/* @import "https://unpkg.com/open-props@1.5.11/media.min.css"; */
 @import "https://unpkg.com/open-props@1.5.11/fonts.min.css";
 @import "https://unpkg.com/open-props@1.5.11/sizes.min.css";
 @import "https://unpkg.com/open-props@1.5.11/gray.min.css";
@@ -42,8 +42,7 @@ section {
 
 footer {
   height: 10rem;
-  background-color: var(--gray-2);
-  background-color: var(--gray-3);
+  background-color: var(--brand-5);
   padding: var(--size-3) var(--size-9);
   grid-area: footer;
 }
@@ -146,7 +145,7 @@ nav > ul > li > a:hover,
 }
 
 .gradient-accent h5 {
-  color: var(--gray-6);
+  color: var(--gray-7);
 }
 
 .background-mixtapes {
