@@ -1,8 +1,8 @@
-@import "https://unpkg.com/open-props";
-/* @import "https://unpkg.com/browse/open-props@1.5.11/media.min.css";
-@import "https://unpkg.com/browse/open-props@1.5.11/fonts.min.css";
-@import "https://unpkg.com/browse/open-props@1.5.11/sizes.min.css";
-@import "https://unpkg.com/browse/open-props@1.5.11/gray.min.css"; */
+/* @import "https://unpkg.com/open-props"; */
+@import "https://unpkg.com/open-props@1.5.11/media.min.css";
+@import "https://unpkg.com/open-props@1.5.11/fonts.min.css";
+@import "https://unpkg.com/open-props@1.5.11/sizes.min.css";
+@import "https://unpkg.com/open-props@1.5.11/gray.min.css";
 
 :where(html) {
   --brand-5: #b0a49a;
