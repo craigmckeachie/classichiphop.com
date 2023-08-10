@@ -38,8 +38,8 @@ section {
 
 footer {
   height: 10rem;
-  background-color: var(--gray-7);
-  color: var(--gray-0);
+  background-color: var(--gray-2);
+  /* color: var(--gray-7); */
   padding: var(--size-3) var(--size-9);
   grid-area: footer;
 }
