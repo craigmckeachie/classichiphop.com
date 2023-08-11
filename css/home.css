@@ -2,10 +2,13 @@
 /* @import "https://unpkg.com/open-props@1.5.11/media.min.css"; */
 @import "https://unpkg.com/open-props@1.5.11/fonts.min.css";
 @import "https://unpkg.com/open-props@1.5.11/sizes.min.css";
+@import "https://unpkg.com/open-props@1.5.11/colors.min.css";
 @import "https://unpkg.com/open-props@1.5.11/gray.min.css";
+@import "https://unpkg.com/open-props@1.5.11/shadows.min.css";
 
 :where(html) {
-  --brand-5: #b0a49a;
+  --brand-4: hsl(30, 12%, 85%);
+  --brand-5: hsl(27, 12%, 65%);
 }
 
 html,
@@ -49,7 +52,12 @@ footer {
   grid-area: footer;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: var(--font-weight-6);
 }
 
@@ -146,8 +154,8 @@ nav > ul > li > a:hover,
   grid-template-columns: 1fr;
   padding: var(--size-10) var(--size-14);
   background: var(--brand-5);
-  background: -webkit-linear-gradient(to right, var(--brand-5), var(--gray-0));
-  background: linear-gradient(to right, var(--brand-5), var(--gray-0));
+  background: -webkit-linear-gradient(to right, var(--brand-5), var(--brand-4));
+  background: linear-gradient(to right, var(--brand-5), var(--brand-4));
 }
 
 .gradient-accent h5 {
@@ -180,6 +188,10 @@ nav > ul > li > a:hover,
   line-height: var(--font-lineheight-3);
   text-transform: uppercase;
 }
+
+/* .background-mixtapes h3 {
+  text-shadow: 2px 2px 0px var(--brand-5);
+} */
 
 .background-graph-paper {
   height: 25%;
