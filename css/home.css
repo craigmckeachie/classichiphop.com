@@ -1,4 +1,4 @@
-/* @import "https://unpkg.com/open-props"; */
+/* where */
 @import "https://unpkg.com/open-props@1.5.11/fonts.min.css";
 @import "https://unpkg.com/open-props@1.5.11/sizes.min.css";
 @import "https://unpkg.com/open-props@1.5.11/gray.min.css";
@@ -8,17 +8,35 @@
   --brand-5: hsl(27, 12%, 65%);
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 html,
 body {
   height: 100%;
   width: 100%;
 }
 
+
+
 body {
   font-family: var(--font-sans);
   font-size: var(--font-size-1);
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-3);
+  
   color: var(--gray-7);
-  font-weight: var(--font-weight-4);
   margin: 0;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -57,12 +75,14 @@ h5,
 h6 {
   font-weight: var(--font-weight-6);
   font-size: var(--font-size-fluid-1);
+    line-height: var(--font-lineheight-00);
 }
 
 p {
   max-width: var(--size-content-2);
   line-height: var(--font-lineheight-3);
   text-align: left;
+  margin-top: var(--size-3);
 }
 
 nav {
