@@ -171,12 +171,18 @@ nav > ul > li > a:hover,
 .background-mixtapes {
   background-image: linear-gradient(hsla(0, 0%, 0%, 0.2), rgba(0, 0, 0, 0.2)),
     url("/images/mixtapes.jpg");
-  min-height: 20%;
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   display: block;
+}
+
+@media (min-width: 35.5rem) {
+  .background-mixtapes {
+    min-height: 20%;
+  }
 }
 
 .background-mixtapes-text {
@@ -234,8 +240,6 @@ article {
   text-align: center;
 }
 
-/* style="display: flex; justify-content: space-around; flex-wrap: wrap" */
-
 #ultra-image {
   margin-top: var(--size-7);
   display: block;
@@ -248,7 +252,6 @@ article {
 }
 
 #master-ace-bizmarkie-puppet {
-  
   display: block;
   max-width: 100%;
   height: auto;
