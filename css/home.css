@@ -63,7 +63,7 @@ h6 {
 }
 
 p {
-  width: 32ch;
+  max-width: var(--size-content-2);
   line-height: var(--font-lineheight-3);
   text-align: left;
 }
@@ -219,7 +219,7 @@ nav > ul > li > a:hover,
 @media (min-width: 35.5rem) {
   .split {
     flex-direction: row;
-    gap: 4rem;
+    gap: var(--size-9);
   }
 
   .split > * {
