@@ -83,6 +83,10 @@ article {
   width: min(90%, 100rem);
 }
 
+.feed > .container   {
+  width: min(96%, 100rem);
+}
+
 .split {
   display: flex;
   flex-direction: row;
