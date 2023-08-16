@@ -18,7 +18,8 @@ h3,
 p,
 div,
 section,
-article, figure {
+article,
+figure {
   margin: 0;
 }
 
@@ -29,8 +30,12 @@ body {
   font-size: var(--font-size-1);
 }
 
+header {
+  margin: var(--size-3) var(--size-3);
+}
+
 main {
-  /* border: 1px solid black; */
+  border-top: var(--size-0) solid var(--gray-2);
 }
 
 h1,
@@ -39,6 +44,8 @@ h3 {
   font-weight: var(--font-weight-5);
   font-size: var(--font-size-3);
   line-height: var(--font-lineheight-0);
+  margin: var(--size-3) 0;
+  display: inline-block;
 }
 
 h1,
@@ -65,6 +72,7 @@ article figure img {
 }
 
 article {
+  padding: var(--size-3) var(--size-1);
   border-bottom: var(--border-size-1) solid hsl(30, 12%, 85%);
 }
 
@@ -72,7 +80,16 @@ article {
   margin: 0 auto;
   /* width: 90%;
   max-width: 70.5rem; */
-  width: min(90%, 70.5rem);
+  width: min(90%, 100rem);
+}
+
+.split {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--size-7)
+  /* width: 100%; */
+  /* align-items: start; */
 }
 
 .bg-neutral {
@@ -88,4 +105,10 @@ article {
   border-radius: var(--radius-3);
   /* margin: 0 var(--size-7); */
   width: min(40%, 40rem);
+}
+
+.read-time {
+  color: var(--gray-6);
+  font-weight: var(--font-weight-4);
+  font-size: var(--font-size-0);
 }
