@@ -28,14 +28,12 @@ body {
   width: 100%;
 }
 
-
-
 body {
   font-family: var(--font-sans);
   font-size: var(--font-size-1);
   font-size: var(--font-size-3);
   font-weight: var(--font-weight-3);
-  
+
   color: var(--gray-7);
   margin: 0;
   display: grid;
@@ -75,7 +73,7 @@ h5,
 h6 {
   font-weight: var(--font-weight-6);
   font-size: var(--font-size-fluid-1);
-    line-height: var(--font-lineheight-00);
+  line-height: var(--font-lineheight-00);
 }
 
 p {
@@ -188,7 +186,6 @@ nav > ul > li > a:hover,
 .background-mixtapes {
   background-image: linear-gradient(hsla(0, 0%, 0%, 0.2), rgba(0, 0, 0, 0.2)),
     url("/images/mixtapes.jpg");
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

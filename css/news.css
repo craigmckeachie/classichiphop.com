@@ -1,0 +1,91 @@
+@import "https://unpkg.com/open-props";
+
+/* :where(body){
+    --ff-body-text: var(--font-sans): 
+    --ff-heading-text: var(--font-serif):
+} */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+div,
+section,
+article, figure {
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: var(--font-lineheight-4);
+  font-weight: var(--font-weight-3);
+  font-size: var(--font-size-1);
+}
+
+main {
+  /* border: 1px solid black; */
+}
+
+h1,
+h2,
+h3 {
+  font-weight: var(--font-weight-5);
+  font-size: var(--font-size-3);
+  line-height: var(--font-lineheight-0);
+}
+
+h1,
+h2,
+h3,
+p {
+  /* margin: 1em 0; */
+}
+
+article h2 {
+  font-size: var(--font-size-1);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+article figure img {
+  width: 72px;
+  height: 72px;
+  aspect-ratio: var(--ratio-square);
+  border-radius: var(--radius-3);
+}
+
+article {
+  border-bottom: var(--border-size-1) solid hsl(30, 12%, 85%);
+}
+
+.container {
+  margin: 0 auto;
+  /* width: 90%;
+  max-width: 70.5rem; */
+  width: min(90%, 70.5rem);
+}
+
+.bg-neutral {
+  background-color: #f6f8fc;
+}
+
+.bg-light {
+  background-color: white;
+}
+
+.feed {
+  /* padding: var(--size-10) var(--size-0); */
+  border-radius: var(--radius-3);
+  /* margin: 0 var(--size-7); */
+  width: min(40%, 40rem);
+}
