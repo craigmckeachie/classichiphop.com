@@ -62,13 +62,13 @@ article h2 {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 article figure img {
-  width: 72px;
-  height: 72px;
   aspect-ratio: var(--ratio-square);
   border-radius: var(--radius-3);
+  object-fit: cover;
 }
 
 article {
@@ -80,21 +80,52 @@ article {
   margin: 0 auto;
   /* width: 90%;
   max-width: 70.5rem; */
-  width: min(90%, 100rem);
+  width: min(90%, 70.5rem);
 }
 
-.feed > .container   {
-  width: min(96%, 100rem);
+/* .feed {
+  width: min(96%, 40rem);
+} */
+
+section {
+  display: flex;
+  flex-direction: column;
 }
 
 .split {
   display: flex;
   flex-direction: row;
+  /* flex-basis: 100%; */
   justify-content: flex-start;
-  gap: var(--size-7)
-  /* width: 100%; */
-  /* align-items: start; */
+  gap: var(--size-4);
 }
+
+/* .split > * {
+  flex: 1;
+} */
+
+.split > figure {
+  flex: 1;
+}
+
+.split > div {
+  flex: 4;
+}
+
+
+
+
+
+/* @media (min-width: 40em) {
+  article figure img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .split > * {
+    flex-basis: content;
+  }
+} */
 
 .bg-neutral {
   background-color: #f6f8fc;
@@ -106,9 +137,9 @@ article {
 
 .feed {
   /* padding: var(--size-10) var(--size-0); */
-  border-radius: var(--radius-3);
   /* margin: 0 var(--size-7); */
-  width: min(40%, 40rem);
+  /* width: min(40%, 40rem); */
+  border-radius: var(--radius-3);
 }
 
 .read-time {
