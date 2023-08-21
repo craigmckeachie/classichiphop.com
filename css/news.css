@@ -48,18 +48,11 @@ h3 {
   display: inline-block;
 }
 
-h1,
-h2,
-h3,
-p {
-  /* margin: 1em 0; */
-}
-
-article h2 {
+.feed article h2 {
   font-size: var(--font-size-1);
 }
 
-img {
+.feed img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -83,16 +76,13 @@ article {
   width: min(90%, 70.5rem);
 }
 
-/* .feed {
-  width: min(96%, 40rem);
-} */
 
-section {
+.feed {
   display: flex;
   flex-direction: column;
 }
 
-.split {
+.feed .split {
   display: flex;
   flex-direction: row;
   /* flex-basis: 100%; */
@@ -104,28 +94,13 @@ section {
   flex: 1;
 } */
 
-.split > figure {
+.feed .split > figure {
   flex: 1;
 }
 
-.split > div {
+.feed .split > div {
   flex: 4;
 }
-
-
-
-
-
-/* @media (min-width: 40em) {
-  article figure img {
-    height: 100px;
-    width: 100px;
-  }
-
-  .split > * {
-    flex-basis: content;
-  }
-} */
 
 .bg-neutral {
   background-color: #f6f8fc;
