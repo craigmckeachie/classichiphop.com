@@ -1,8 +1,10 @@
-@import "https://unpkg.com/open-props";
-/* where */
-/* @import "https://unpkg.com/open-props@1.5.11/fonts.min.css";
+/* @import "https://unpkg.com/open-props"; */
+
+@import "https://unpkg.com/open-props@1.5.11/fonts.min.css";
 @import "https://unpkg.com/open-props@1.5.11/sizes.min.css";
-@import "https://unpkg.com/open-props@1.5.11/gray.min.css"; */
+@import "https://unpkg.com/open-props@1.5.11/gray.min.css";
+@import "https://unpkg.com/open-props@1.5.11/borders.min.css";
+
 
 :where(html) {
   --brand-4: #ddd9d4;
@@ -227,7 +229,7 @@ nav > ul > li > a:hover,
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: var(--size-14);
+  width: var(--size-13);
   padding: 0em 0em;
   font-size: xx-large;
   font-weight: var(--font-weight-7);
