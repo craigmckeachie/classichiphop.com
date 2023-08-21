@@ -348,6 +348,7 @@ article {
 
 .feed {
   border-radius: var(--radius-3);
+  margin-bottom: var(--size-9);
 }
 
 .read-time {
