@@ -78,13 +78,13 @@ h6 {
   line-height: var(--font-lineheight-00);
   margin: var(--size-3) 0;
   display: flex;
-  color: var(--gray-7)
+  color: var(--gray-7);
 }
 
 h1 {
   margin: var(--size-7) 0;
   font-size: var(--font-size-fluid-1);
-  color: var(--gray-5)
+  color: var(--gray-5);
 }
 
 /* h1,
@@ -226,7 +226,6 @@ nav > ul > li > a:hover,
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--gray-0);
   width: var(--size-14);
   padding: 0em 0em;
   font-size: xx-large;
@@ -234,6 +233,11 @@ nav > ul > li > a:hover,
   font-family: monospace;
   line-height: var(--font-lineheight-3);
   text-transform: uppercase;
+  color: var(--gray-0);
+}
+
+.background-mixtapes-text h3 {
+  color: var(--gray-0);
 }
 
 .background-graph-paper {
