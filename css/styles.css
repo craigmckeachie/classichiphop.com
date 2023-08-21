@@ -19,7 +19,8 @@ body,
 h1,
 h2,
 h3,
-p, figure {
+p,
+figure {
   margin: 0;
 }
 
@@ -51,6 +52,7 @@ header {
 
 main {
   grid-area: main;
+  border-top: var(--border-size-1) solid var(--gray-3);
 }
 
 section.home {
@@ -75,7 +77,14 @@ h6 {
   font-size: var(--font-size-fluid-1);
   line-height: var(--font-lineheight-00);
   margin: var(--size-3) 0;
-  display: inline-block;
+  display: flex;
+  color: var(--gray-7)
+}
+
+h1 {
+  margin: var(--size-7) 0;
+  font-size: var(--font-size-fluid-1);
+  color: var(--gray-5)
 }
 
 /* h1,
@@ -252,13 +261,12 @@ nav > ul > li > a:hover,
   }
 }
 
-/* article {
-  display: flex;
-  flex-wrap: wrap;
-} */
-
 .text-center {
   text-align: center;
+}
+
+.text-center > * {
+  display: block;
 }
 
 #ultra-image {
@@ -282,10 +290,6 @@ nav > ul > li > a:hover,
     linear-gradient(to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.4));
 }
 
-.feed article h2 {
-  font-size: var(--font-size-1);
-}
-
 .feed img {
   display: block;
   max-width: 100%;
@@ -299,7 +303,7 @@ article figure img {
 }
 
 article {
-  padding: var(--size-3) var(--size-1);
+  padding: var(--size-3) var(--size-3);
   border-bottom: var(--border-size-1) solid hsl(30, 12%, 85%);
 }
 

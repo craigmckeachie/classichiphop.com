@@ -1,9 +1,5 @@
 @import "https://unpkg.com/open-props";
 
-/* :where(body){
-    --ff-body-text: var(--font-sans): 
-    --ff-heading-text: var(--font-serif):
-} */
 
 *,
 *::after,
