@@ -377,15 +377,37 @@ article {
 }
 
 .post {
-  padding: var(--size-7) var(--size-11);
+  padding: var(--size-7) var(--size-3);
   border-radius: var(--radius-3);
   margin-bottom: var(--size-9);
+}
+
+.img-full-width {
+  aspect-ratio: 1;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-half-width {
+  aspect-ratio: 4/5;
+  max-width: 50%;
+  height: auto;
+}
+
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+@media (min-width: 35.5rem) {
+  .post {
+    padding: var(--size-7) var(--size-11);
+  }
 }
 
 .feed .split {
   display: flex;
   flex-direction: row;
-  /* flex-basis: 100%; */
   justify-content: flex-start;
   gap: var(--size-4);
 }
