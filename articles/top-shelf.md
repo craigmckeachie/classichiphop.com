@@ -7,15 +7,17 @@ And I swore Kane's voice sounded like it did on "Long Live the Kane" and "It's a
 But I don't care. Thank you Rostrum Records.
 Like a kid who likes to watch a scary movie because of how it makes them feel even if it's pretend. I loved it.
 
-The beats are so golden era hip hop. It feels like it's 88 time to set 'em straight.
-Biz sounds like he is still on the Cold Chillin label.
-The Craig G beat sounds like it could be on his Kingpin album or Marly Marl in Control.
-Special Ed flows like "Think About It".
+The beats are so golden era hip hop. It feels as if "it's 88, time to set 'em straight".
+Biz is indistinguishable from his Cold Chillin era.
+
+The Craig G beat could be on his "Kingpin" album or "Marley Marl's In Control".
+Special Ed's flow is reminiscent of "Think About It".
 MC Lyte sounds like she is flowing over a King of Chill beat...you get the idea.
 
 If you are a fan of golden age hip hop please go stream the album immediately.
 
-The story is of how the recordings were lost goes as follows.
+The story is of how the recordings were lost goes as follows:
+
 A studio named Top Shelf was a popular recording destination for rap artists in the late 80s.
 The studio was looted during the Tompkins Square Park riots and all these recordings were taken.
 The recordings were found years later and are now being released.
