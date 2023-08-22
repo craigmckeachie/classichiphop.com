@@ -95,6 +95,11 @@ h6 {
   color: var(--gray-11);
 }
 
+.feed h2 {
+  margin: var(--size-1) 0 var(--size-1) 0;
+
+}
+
 ul {
   margin: var(--size-7) 0 var(--size-7) 0;
 }
