@@ -95,6 +95,10 @@ h6 {
   color: var(--gray-11);
 }
 
+ul {
+  margin: var(--size-7) 0 var(--size-7) 0;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -136,16 +140,22 @@ li {
 
 .post a {
   text-decoration: underline;
-
   font-weight: var(--font-weight-6);
 }
 
+.post ul {
+  background-color: var(--gray-1);
+  border-left: 4px solid var(--bronco-400);
+}
 
 .post li {
+  list-style: outside disc;
   padding: var(--size-3);
+}
 
-  border-left: 4px solid var(--bronco-400);
-  /* background-color: var(--bronco-100); */
+.post p:has(em) {
+  background-color: var(--bronco-50);
+  padding: var(--size-4) var(--size-2);
 }
 
 nav {
