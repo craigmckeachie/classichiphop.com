@@ -264,6 +264,7 @@ nav > ul > li > a:hover,
   background: var(--brand-5);
   background: -webkit-linear-gradient(to right, var(--brand-5), var(--brand-4));
   background: linear-gradient(to right, var(--brand-5), var(--brand-4));
+  min-height: var(--size-12);
 }
 
 .gradient-accent h5 {
