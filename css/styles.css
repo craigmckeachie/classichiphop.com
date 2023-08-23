@@ -447,3 +447,9 @@ article {
   font-weight: var(--font-weight-4);
   font-size: var(--font-size-0);
 }
+
+.if-you li {
+  list-style: outside none;
+  /* font-size: var(--font-size-1); */
+  padding-bottom: var(--size-2);
+}
