@@ -367,7 +367,7 @@ nav > ul > li > a:hover,
 }
 
 article figure img {
-  aspect-ratio: var(--ratio-square);
+  aspect-ratio: var(--ratio-portrait);
   border-radius: var(--radius-3);
   object-fit: cover;
 }
